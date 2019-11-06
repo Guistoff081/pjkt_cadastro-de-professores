@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-sacle1">
+    <style type="text/css">
+        @import url("Css/Cadastro_Professor.css");
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script type="text/javascript" src="javascript/cadastro.js"></script>
+
+</head>
+
+<body>
+    <header class="row justify-content-center">
+        <div class="logo">
+            <img src="Logo.png" />
+            <div class="nav">
+                <img src="Nome2.png" />
+                <div class="logo2">
+                    <img src="Logo.png" />
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <br>
+        <div class="dv">
+            <div class="logodiv">
+                <p>
+                    <img src="logo.png">
+                </p>
+            </div>
+            <hr>
+            <div class="fr1">
+                <form name="formc" method="post" action="#" class="formuser">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="Nome">Nome completo:</label>
+                            <input type="text" class="form-control" id="Nome" name="nome" aria-describedby="nomeHelp" placeholder="Seu Nome">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="CPF">Insira seu CPF:</label>
+                            <input type="text" class="form-control" id="CPF" name="cpf" placeholder="Seu Cpf">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="formacao">Formação Em:</label>
+                            <input type="text" class="form-control" id="formacao" nome="formacao" placeholder="Sua formacao">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="select">Graduação:</label>
+                        </div>
+                        <select class="custom-select" id="select" name="select">
+                                <option selected value ="">Escolher...</option>
+                                <option value="1">Pós Graduado</option>
+                                <option value="2">Mestrado</option>
+                                <option value="3">Doutorado</option>
+                                <option value="3">Pós Doutorado</option>
+                        </select>
+                    </div>
+                    <div class="but col-md-12">
+                        <button type="button" class="btn btn-primary" onclick="return validar(); return valida();">Confirmar o seu Cadastro</button>
+                    </div>
+                    <div class="butv col-md-12">
+                        <button type="button" class="btn btn-secunday"><a href="index.html">Voltar</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="fr2">
+                <form name="formc2" method="post" action="#">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="email">Endereço de email:</label>
+                            <input type="text" class="form-control" id="email" nome="email" aria-describedby="nomeHelp" placeholder="Seu E-mail">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="exampleInputPassword1">Digite uma Senha:</label>
+                            <input type="password" class="form-control" id="Password" name="Password" placeholder="Senha">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="exampleInputPassword1">Repetir a sua Senha:</label>
+                            <input type="password" class="form-control" id="Reptpassword" name="Reptpassword" placeholder="Senha">
+                            <br>
+                        </div>
+                    </div>
+                    <!--  <div class="input-group mb-3">
+                        <div class="custom-file col-md-12">
+                            <label class="custom-file-label" for="inputGroupFile01">Escolher arquivo:</label>
+                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        </div>
+                    </div> -->
+            </div>
+            <!-- <div class=" col-md-12">
+                        <button type="button" class="btn btn-info" onclick="alertar('aviso');">Consultar Professores Cadastrados</button>
+                    </div>-->
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
