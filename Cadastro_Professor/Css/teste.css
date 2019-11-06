@@ -1,0 +1,13 @@
+.header {
+    height: 150px;
+    margin-top: -10px;
+    background: #6394bc;
+}
+
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
+}

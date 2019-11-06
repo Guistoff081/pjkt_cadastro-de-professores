@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-sacle1">
+    <style type="text/css">
+        @import url("Css/Login_Professor.css");
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Css/Cadastro_Professor.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script type="text/javascript" src="javascript/login.js"></script>
+</head>
+
+<body>
+    <header class="row justify-content-center">
+        <div class="logo">
+            <img src="Logo.png" />
+            <div class="nav">
+                <img src="Nome2.png" />
+                <div class="logo2">
+                    <img src="Logo.png" />
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <br>
+        <div class="dv">
+            <div class="logodiv">
+                <p>
+                    <img src="logo.png">
+                </p>
+            </div>
+            <hr>
+            <h2 class="text-center">Acessar a Conta</h2>
+            <form name="forma" method="post" action="#">
+                <div class="login">
+                    <span>
+                        <label>Login:</label>
+                            <input type="text" class="form-control" id="login" name="login" aria-describedby="loginHelp" placeholder="Seu E-mail">
+                    </span>
+                </div>
+
+                <div class="senha">
+                    <span>
+                        <label>Senha:</label>
+                            <input type="password" class="form-control" id="senha" name="senha" aria-describedby="senhaHelp" placeholder="Sua senha">
+                    </span>
+                    <br>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-primary" onclick="return validarLogin();">Entrar na Conta</button>
+                </div>
+                <div class="button1">
+                    <button type="button" class="btn btn-secundary"><a href="index.html">Voltar ao Inicio</a></button>
+                </div>
+            </form>
+
+        </div>
+</body>
+
+</html>

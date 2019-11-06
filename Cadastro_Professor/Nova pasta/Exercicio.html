@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercicio 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript">
+        function calcular() {
+            let fa = document.getElementById('fahrenheit').value;
+            if (validar(fa)) {
+                let f = Number.parseFloat(fa);
+                let c = (f - 32.0) / 1.8;
+                mensagem('resultado:' + c.tofixed(5) + 'Graus Celsus!');
+            } else {
+                alert(mensagem('Campo invalido!'));
+            }
+        };
+
+        function validar(valor) {
+            if (!valor) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+
+        function mensagem(msg) {
+            return document.getElementById('resultado').innerHTML = msg;
+        };
+
+        function get(id) {
+            return document.getElementById('id');
+        };
+    </script>
+
+</head>
+
+<body>
+    <div class="form-group">
+        <div class="col-md-12">
+            <label for="Fahrenheit">Digite um Valor Fahrenheit:</label>
+            <input type="text" class="form-control" id="fahrenheit" aria-describedby="FahrenheitHelp" placeholder="Valor" style="width: 300px;"> <br>
+            <button type="button" onclick='calcular();' class="btn btn-primary">Calcular</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
